@@ -30,21 +30,23 @@ function Cartitem({ id, qty }: ICartItem) {
       <Link to={`product/${id}`}>
         <img className="rounded w-28" src={product?.image} alt="" />
       </Link>
-      <div className="mr-4">
+      <div className="mr-4 mt-2">
         <h3 className="">{product?.title}</h3>
         <div className="mt-2">
           <Button
             onClick={() => handleRemoveProduct(id)}
-            className="mr-2"
+            className="mr-4 mt-4"
             variant="danger"
-          ></Button>
+          >
+            حذف
+          </Button>
           <Button
             onClick={() => handleIncreaseProductQty(id)}
             variant="primary"
           >
             +
           </Button>
-          <span>{qty}</span>
+          <span className="p-2">{qty}</span>
           <Button
             onClick={() => handleDecreaseProductQty(id)}
             variant="primary"

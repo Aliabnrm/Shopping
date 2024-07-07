@@ -13,12 +13,14 @@ function Cart() {
           <Cartitem {...item} key={item.id} />
         ))}
 
-        <div className="bg-gray-200 rounded p-6">
+        <div className="bg-gray-200 rounded p-6 mt-40">
           <p className="text-right">قیمت کل:۲۰۰۰</p>
           <p className="text-right">تخفیف شما:۳۰۰۰</p>
           <p className="text-right">قیمت نهایی:۱۹۰۰</p>
         </div>
-        <Button className="mt-2" variant="success"></Button>
+        <Button className="mt-5" variant="success">
+          ثبت خرید
+        </Button>
       </Container>
     </div>
   );

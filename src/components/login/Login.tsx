@@ -20,24 +20,38 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="mt-10">
       <Container>
-        <div className="bg-slate-300 p-12 rounded">
+        <div className="bg-slate-300  p-10 rounded flex-col w-96 m-auto h-96 ">
+          <label htmlFor="username">username</label>
+          <br />
           <input
+            className="rounded w-full mt-1 mb-3 "
             onChange={handleChange}
             type="text"
             placeholder="username"
             name="username"
             value={user.username}
           />
+          <br />
+          <label className="" htmlFor="password">
+            password
+          </label>
+          <br />
           <input
+            className="rounded w-full mt-1"
             onChange={handleChange}
             type="password"
             placeholder="password"
             name="password"
             value={user.password}
           />
-          <Button onClick={() => handleLogin(user.username, user.password)}>
+          <br />
+          <Button
+            className="w-full mt-20 "
+            variant="success"
+            onClick={() => handleLogin(user.username, user.password)}
+          >
             login
           </Button>
         </div>
@@ -45,5 +59,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;

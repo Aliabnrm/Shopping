@@ -16,7 +16,7 @@ function Store() {
   return (
     <div>
       <Container>
-        <h1 className="text-right mt-5">جدید ترین محصولات</h1>
+        <h1 className=" mt-5">New Products</h1>
 
         <div className="grid grid-cols-4 gap-4 mt-4">
           {products.map((item) => (
