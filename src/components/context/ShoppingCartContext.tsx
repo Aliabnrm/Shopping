@@ -10,7 +10,6 @@ interface CartItem {
   id: number;
   qty: number;
 }
-
 interface ShoppingCartContext {
   handleIncreaseProductQty: (id: number) => void;
   handleDecreaseProductQty: (id: number) => void;

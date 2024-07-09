@@ -38,7 +38,7 @@ function Cartitem({ id, qty }: ICartItem) {
             className="mr-4 mt-4"
             variant="danger"
           >
-            حذف
+            Remove
           </Button>
           <Button
             onClick={() => handleIncreaseProductQty(id)}
