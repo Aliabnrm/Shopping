@@ -4,12 +4,17 @@ function Home() {
   return (
     <div>
       <Container>
-        <div className="">
-          <img
-            className="m-auto rounded-b-lg"
-            src="https://noornegar.com/blog/wp-content/uploads/2019/09/photography-of-clothing.jpg"
-            alt=""
-          />
+        <div className="shadow-xl grid-flow-col">
+          <div className="grid-cols-4">
+            <h1>Collection</h1>
+          </div>
+          <div className="grid-cols-8">
+            <img
+              className="m-auto rounded-b-lg "
+              src="https://www.zibamoon.com/Files/Thumbs/2021/3/3/%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84-%D9%BE%D8%B3%D8%B1%D8%A7%D9%86%D9%87-%D9%88-%D9%85%D8%B1%D8%AF%D8%A7%D9%86%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B9%DB%8C%D8%AF-1400.webp"
+              alt=""
+            />
+          </div>
         </div>
       </Container>
     </div>

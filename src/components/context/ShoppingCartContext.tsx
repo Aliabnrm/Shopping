@@ -10,6 +10,7 @@ interface CartItem {
   id: number;
   qty: number;
 }
+
 interface ShoppingCartContext {
   handleIncreaseProductQty: (id: number) => void;
   handleDecreaseProductQty: (id: number) => void;
@@ -17,7 +18,6 @@ interface ShoppingCartContext {
   handleRemoveProduct: (id: number) => void;
   handleLogin: (username: string, password: string) => void;
   handleLogOut: () => void;
-
   cartQty: number;
   cartItems: CartItem[];
   islogin: boolean;
@@ -111,7 +111,6 @@ export function SoppingCartProvider({ children }: ShoppingCartProvider) {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-
     if (token) {
       setIsLogin(true);
     }

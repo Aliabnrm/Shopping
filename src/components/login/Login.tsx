@@ -22,7 +22,7 @@ function Login() {
   return (
     <div className="mt-10">
       <Container>
-        <div className="bg-slate-300  p-10 rounded flex-col w-96 m-auto h-96 ">
+        <div className="bg-green-600  p-10 rounded flex-col w-96 m-auto h-96  ">
           <label htmlFor="username">username</label>
           <br />
           <input
@@ -48,8 +48,7 @@ function Login() {
           />
           <br />
           <Button
-            className="w-full mt-20 "
-            variant="success"
+            className="w-full mt-20 bg-white "
             onClick={() => handleLogin(user.username, user.password)}
           >
             login

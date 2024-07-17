@@ -10,8 +10,8 @@ function Navbar() {
   return (
     <div className="h-14 border-b shadow ">
       <Container>
-        <div className=" flex justify-between flex-row-reverse items-center">
-          <ul className="flex flex-row-reverse">
+        <div className=" flex justify-between flex-row items-center">
+          <ul className="flex flex-row">
             <li className="ml-4">
               <Link to="/">Home</Link>{" "}
             </li>
